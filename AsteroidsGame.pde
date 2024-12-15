@@ -14,7 +14,8 @@ void setup()
   stars = new Stars();
   for (int i = 0; i < 10; i++){
     rock.add(i, new Asteroids((float)(Math.random()*3)-1, (float)(Math.random()*3)-1, (float)(Math.random()*0.05)-0.02));
-  }
+    rock.get(i).randomSpawn();  
+}
   textSize(24);
 }
 void draw()
