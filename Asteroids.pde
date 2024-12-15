@@ -1,4 +1,3 @@
-
 class Asteroids extends Floater{
   float rot;
   public Asteroids(float x, float y, float r){
@@ -15,7 +14,7 @@ class Asteroids extends Floater{
     yCorners[3] = (int)(Math.random()*10)+30;
     xCorners[4] = (int)(Math.random()*10)-30;
     yCorners[4] = (int)(Math.random()*10)+30;
-    xCorners[5] = (int)(Math.random()*25)-35;
+    xCorners[5] = (int)(Math.random()*25)-60;
     yCorners[5] = 0;
     xCorners[6] = xCorners[0];
     yCorners[6] = yCorners[0];
@@ -53,5 +52,9 @@ class Asteroids extends Floater{
   }
   public int getY() {
     return (int)myCenterY;
+  }
+  public void randomSpawn(){
+    myCenterX = (int)(Math.random()*800);
+    myCenterY = (int)(Math.random()*800);
   }
 }
