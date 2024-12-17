@@ -58,7 +58,7 @@ void draw()
       if (Math.abs(bob.getX() - rock.get(i).getX()) <= 40){
         if (Math.abs(bob.getY() - rock.get(i).getY()) <= 40){
           rock.remove(i);
-          health -= 5;
+          health -= 10;
           rock.add(0, new Asteroids((float)(Math.random()*3)-1, (float)(Math.random()*3)-1, (float)(Math.random()*0.05)-0.02));
         }
       }
