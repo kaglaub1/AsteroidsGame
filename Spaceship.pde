@@ -86,4 +86,10 @@ class Spaceship extends Floater
     rotate(-1*dRadians);
     translate(-1*(float)myCenterX, -1*(float)myCenterY);
   }
+  public int getXspeed() {
+    return (int)myXspeed;
+  }
+  public int getYspeed() {
+    return (int)myYspeed;
+  }
 }
